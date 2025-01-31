@@ -50,7 +50,14 @@ footer{
     display: grid;
     grid-template-columns: auto 70% auto;
 }
+
 nav{
     background-color: #B5C99A;
     color: black;
+}
+ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
 }
