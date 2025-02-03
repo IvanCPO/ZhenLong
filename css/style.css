@@ -30,8 +30,7 @@ footer, header > div:first-child{
     padding: 0px 80px;
 }
 
-footer {
-    position: absolute;
+footer{
     bottom: 0px;
     left: 0px;
     right: 0px;
