@@ -45,7 +45,7 @@ footer, header > div:first-child{
     align-items: center;
 }
 
-.padding_control > div{
+.padding_control > div:not(.notice){
     width: 75%;
 }
 
