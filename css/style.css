@@ -1,15 +1,6 @@
 body {
     margin: 0;
 }
-/* header {
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-areas: "menu logo links";
-    align-items: center;
-    padding: 10px 20px;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.562);
-} */
 
 header div {
     display: flex;
@@ -37,6 +28,14 @@ footer, header > div:first-child{
     justify-content: space-between;
     align-items: center;
     padding: 0px 80px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding-bottom: 30px;
 }
 
 .padding_control{
