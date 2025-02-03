@@ -48,9 +48,12 @@ footer{
 
 .padding_control{
     display: flex;
-    width: 80%;
     justify-content: center;
     align-items: center;
+}
+
+.padding_control > div{
+    width: 75%;
 }
 
 nav{
