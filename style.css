@@ -46,9 +46,11 @@ footer{
     align-items: center;
 }
 
-.grid_control{
-    display: grid;
-    grid-template-columns: auto 70% auto;
+.padding_control{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
 }
 
 nav{
