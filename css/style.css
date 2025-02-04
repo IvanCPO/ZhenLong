@@ -27,14 +27,13 @@ footer, header > div:first-child{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 80px;
+    padding: 30px 80px;
 }
 
 footer{
     bottom: 0px;
     left: 0px;
     right: 0px;
-    padding-bottom: 30px;
 }
 
 .padding_control{
@@ -49,6 +48,9 @@ footer{
 
 nav{
     background-color: #B5C99A;
+    color: black;
+}
+.nav-link{
     color: black;
 }
 ul {

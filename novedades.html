@@ -89,42 +89,59 @@
             color: #2a9d8f;
             font-size: 1.2em;
         }
-
-        footer {
-            background-color: rgb(36, 39, 33);
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0px 80px;
-            padding-bottom: 1em;
-        }
     </style>
 </head>
 
 <body>
+    
     <header>
+        
         <div>
             <h4>Restaurante chino Santiago de Compostela</h4>
-            <p>Novedades</p>
+            <p>Contacto</p>
         </div>
         <div id="logo">
             <div>
                 <img src="img/LogoDIW.png" alt="Logo ZhenLong" width="150px">
                 <h1>Restaurante chino ZhenLong</h1>
             </div>
-            <input type="search" id="search">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-danger" type="submit">Search</button>
+              </form>
         </div>
     </header>
     <nav>
         <div class="padding_control">
-            <ul>
-                <li><a href="#">Todas las categorías</a></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Novedades</a></li>
-                <li><a href="#">Outlet</a></li>
-            </ul>
+            <div>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Todas las Categorias
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Entrantes</a></li>
+                              <li><a class="dropdown-item" href="#">Primer Plato</a></li>
+                              <li><a class="dropdown-item" href="#">Segundo Plato</a></li>
+                              <li><a class="dropdown-item" href="#">Acompañamientos</a></li>
+                            </ul>
+                          </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Outlet</a>
+                    </li>
+                  </ul>
+            </div>
         </div>
     </nav>
     <div class="novedades-container">
@@ -178,7 +195,7 @@
     <footer>
         <div>
             <h2>ZHEN LONG</h2>
-            <p>Tu restaurante chino en Santiago. BLABAL NLA</p>
+            <p>Tu restaurante chino en Santiago.</p>
         </div>
         <p>Contacto</p>
     </footer>

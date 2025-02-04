@@ -99,21 +99,13 @@
             height: 100%;
             object-fit: cover;
         }
-
-        .footer {
-            background-color: rgb(36, 39, 33);
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0px 80px;
-        }
         
     </style>
 </head>
 
 <body>
     <header>
+        
         <div>
             <h4>Restaurante chino Santiago de Compostela</h4>
             <p>Contacto</p>
@@ -123,24 +115,49 @@
                 <img src="img/LogoDIW.png" alt="Logo ZhenLong" width="150px">
                 <h1>Restaurante chino ZhenLong</h1>
             </div>
-            <input type="search" id="search">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-danger" type="submit">Search</button>
+              </form>
         </div>
     </header>
     <nav>
         <div class="padding_control">
-            <ul>
-                <li><a href="#">Todas las categorías</a></li>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Novedades</a></li>
-                <li><a href="#">Outlet</a></li>
-            </ul>
+            <div>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Todas las Categorias
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Entrantes</a></li>
+                              <li><a class="dropdown-item" href="#">Primer Plato</a></li>
+                              <li><a class="dropdown-item" href="#">Segundo Plato</a></li>
+                              <li><a class="dropdown-item" href="#">Acompañamientos</a></li>
+                            </ul>
+                          </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Outlet</a>
+                    </li>
+                  </ul>
+            </div>
         </div>
     </nav>
     <div class="contacto-container">
         <div class="info-contacto">
             <h3>Ubicación</h3>
-            <div class="mapa"><img src="mapa.png" alt="Mapa de Santiago"></div>
+            <div class="mapa"><img src="./img/mapa.png" alt="Mapa de Santiago"></div>
         </div>
         <div class="formulario-contacto">
             <h3>Formulario de contacto</h3>
