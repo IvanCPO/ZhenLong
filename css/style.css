@@ -10,7 +10,393 @@ header div {
 header{
     background-color: #87986A;
 }
+#logo {/* Estilos generales */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Esto hace que el contenido ocupe el espacio disponible entre el header y el footer */
+}
+
+/* Estilos para el header */
+header {
+    background-color: #87986A;
+    padding: 1rem;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden mejor en pantallas pequeñas */
+}
+
 #logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+#logo h1 {
+    width: min-content;
+    font-size: 2rem; /* Ajustar tamaño de fuente */
+}
+
+/* Eliminar márgenes o rellenos no deseados en el header y footer */
+header, footer, .contacto-container {
+    margin: 0;
+    padding: 0;
+}
+
+/* Asegurarnos de que los elementos dentro del header no tengan márgenes adicionales */
+#logo, nav, .contacto-container > div {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el footer */
+footer, header > div:first-child {
+    background-color: rgb(36, 39, 33);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap; /* Permite flexibilidad en móviles */
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Estilos para la navegación */
+nav {
+    background-color: #B5C99A;
+    color: black;
+    padding: 0.5rem;
+}
+
+.nav-link {
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Acomoda los enlaces en pantallas más pequeñas */
+}
+
+ul li {
+    padding: 0.5rem;
+}
+
+/* Estilos para el notice */
+.notice {
+    background-color: #E3DED1;
+    border: dashed 2px #D4AF37;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+}
+
+:has(> .notice) {
+    display: flex;
+    justify-content: center;
+}
+
+.padding_control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.padding_control > div:not(.notice) {
+    width: 75%;
+}
+
+.padding_control:has(.notice) {
+    border-bottom: dashed;
+}
+
+.notice > h1, .notice > p {
+    margin: 0;
+}
+
+.notice > button {
+    background-color: #EFBE04;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+/* Estilos para el grid de catálogo */
+.catalog_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.catalog_grid > img {
+    background-color: #e9d58c;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Mantiene la imagen ajustada */
+}
+
+/* Estilos para el contenedor de contacto y novedades */
+.contacto-container, .novedades-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    flex: 1;
+}
+
+.info-contacto, .formulario-contacto {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-contacto {
+    max-width: 600px;
+    height: auto;
+}
+
+.formulario-contacto {
+    max-width: 400px;
+    height: auto;
+    margin: 0 20px;
+}
+
+.formulario-contacto input, .formulario-contacto textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 10px;
+}
+
+.formulario-contacto button {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.mapa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.novedades-container {
+    background-color: #f9f9f9;
+}
+
+.novedades-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.novedades-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.novedad {
+    width: 80%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.novedad-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.novedad img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.novedad-text {
+    flex: 1;
+}
+
+.novedad h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.novedad p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #2a9d8f;
+    font-size: 1.2rem;
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 1024px) {
+    header div {
+        padding: 1rem;
+    }
+
+    #logo {
+        padding: 0 2rem;
+    }
+
+    .catalog_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .formulario-contacto {
+        max-width: 300px;
+    }
+
+    .info-contacto {
+        max-width: 500px;
+    }
+
+    .novedad-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .novedad img {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo {
+        padding: 0 2rem;
+    }
+
+    .catalog_grid {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .formulario-contacto {
+        width: 100%;
+    }
+
+    .info-contacto {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .novedades-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .novedad {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header div {
+        padding: 0 1rem;
+    }
+
+    #logo {
+        padding: 0 1rem;
+    }
+
+    .catalog_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario-contacto {
+        width: 100%;
+    }
+
+    .info-contacto {
+        width: 100%;
+        margin: 0;
+    }
+
+    .novedad-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .novedad img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .novedad-text {
+        text-align: center;
+    }
+
+    .novedad h3 {
+        font-size: 1.2rem;
+    }
+
+    .novedad p {
+        font-size: 1rem;
+    }
+
+    .precio {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        padding: 1rem 2rem;
+    }
+}
+
     display: flex;
     justify-content: space-between;
     padding: 0px 6em;
