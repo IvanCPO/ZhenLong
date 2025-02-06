@@ -61,7 +61,7 @@ nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content:  space-evenly;
     flex-wrap: wrap;
 }
 
@@ -114,6 +114,12 @@ main p {
 }
 
 /* index.html */
+.padding_control_platos{
+    display: flex;
+    flex-direction: column;
+    padding:5vh;
+}
+
 .banner-container {
     position: relative;
     width: 100%;
