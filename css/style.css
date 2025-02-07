@@ -112,6 +112,25 @@ main p {
     font-family: 'Raleway', sans-serif; 
     font-weight: normal;
 }
+#logoInstagram{
+    height: 6vh;
+}
+#logoFacebook{
+    height: 6vh;
+}
+
+#divFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Esto separará los divs dentro del footer */
+    padding: 20px; /* Añade algo de espacio alrededor */
+}
+
+#divFooter > div {
+    flex: 1; /* Esto hará que los divs dentro del footer se distribuyan de forma equitativa */
+    margin: 0 80px; /* Agrega espacio entre los elementos */
+}
+
 
 /* index.html */
 .padding_control_platos{
