@@ -120,16 +120,28 @@ main p {
 }
 
 #divFooter {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Esto separará los divs dentro del footer */
-    padding: 20px; /* Añade algo de espacio alrededor */
+    justify-content: space-between; 
+    padding: 20px; 
+    text-align: center;
 }
 
 #divFooter > div {
-    flex: 1; /* Esto hará que los divs dentro del footer se distribuyan de forma equitativa */
-    margin: 0 80px; /* Agrega espacio entre los elementos */
+    flex: 1;
+    margin: 0 80px; 
 }
+#parrafoFooter {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    width: 100%; 
+    padding: 10px 0; 
+}
+
 
 
 /* index.html */
