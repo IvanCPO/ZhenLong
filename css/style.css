@@ -607,6 +607,36 @@ main p {
   margin-bottom: 10px;
 }
 
+/* Outlet.html */
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.btn {
+   margin-left: auto;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     #logo {
