@@ -335,7 +335,7 @@ main p {
 }
 
 
-/* Novedades.html */
+/* Novedades.html / Ofertas.html*/
 .novedades-container {
     padding: 40px 20px;
     background-color: #f4f1e9;
@@ -372,9 +372,13 @@ main p {
 
 .novedad-content {
     display: flex;
-    align-items: center;
-    gap: 25px;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 16px; 
+}
+
+.novedad-text {
+    flex: 1; 
 }
 
 .novedad img {
@@ -384,6 +388,7 @@ main p {
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
+
 
 .novedad img:hover {
     transform: scale(1.05);

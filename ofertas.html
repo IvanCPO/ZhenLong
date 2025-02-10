@@ -1,79 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZhenLong</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
-        defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZhenLong - Novedades</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+
 </head>
 
 <body>
-    <header>
-        
-        <div id="logo">
-          <div>
-            <img src="img/LogoDIW.png" alt="Logo ZhenLong" width="150px" />
-            <img src="img/zhen.png" alt="Logo ZhenLong" width="150px" />
-            <img src="img/long.png" alt="Logo ZhenLong" width="150px" />
-          </div>
-          <form role="search">
-            <input type="search" placeholder="Search" aria-label="Search" />
-            <button type="submit">Search</button>
-          </form>
-        </div>
-      </header>
-      <nav>
-        <div>
-          <div>
-            <ul>
-              <li>
-                <div>
-                  <select name="selectNavbar" id="idSelectNavbar">
-                    <option value="todasCategorias">
-                      <a href="#">Todas las categorias</a>
-                    </option>
-                    <option value="entrantes"><a href="#">Entrantes</a></option>
-                    <option value="primerosPlatos">
-                      <a href="#">Primeros Platos</a>
-                    </option>
-                    <option value="segundosPlatos">
-                      <a href="#">Segundos Platos</a>
-                    </option>
-                    <option value="postres"><a href="#">Postres</a></option>
-                    <option value="bebidas"><a href="#">Bebidas</a></option>
-                  </select>
-                </div>
-              </li>
-              <li>
-                <a href="#">Inicio</a>
-              </li>
-              <li>
-                <a href="#">Ofertas</a>
-              </li>
-              <li>
-                <a href="#">Novedades</a>
-              </li>
-              <li>
-                <a href="#">Outlet</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <main>
-        <div class="padding_control">
-            <div>
-                <h1>OFERTAS</h1>
 
+  <header>
+
+    <div id="logo">
+      <div>
+        <img src="img/LogoDIW.png" alt="Logo ZhenLong" width="150px" />
+        <img src="img/zhen.png" alt="Logo ZhenLong" width="150px" />
+        <img src="img/long.png" alt="Logo ZhenLong" width="150px" />
+      </div>
+      <form role="search">
+        <input type="search" placeholder="Search" aria-label="Search" />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+  <nav>
+    <div>
+      <div>
+        <ul>
+          <li>
+            <div>
+              <select name="selectNavbar" id="idSelectNavbar">
+                <option value="todasCategorias">
+                  <a href="#">Todas las categorias</a>
+                </option>
+                <option value="entrantes"><a href="#">Entrantes</a></option>
+                <option value="primerosPlatos">
+                  <a href="#">Primeros Platos</a>
+                </option>
+                <option value="segundosPlatos">
+                  <a href="#">Segundos Platos</a>
+                </option>
+                <option value="postres"><a href="#">Postres</a></option>
+                <option value="bebidas"><a href="#">Bebidas</a></option>
+              </select>
             </div>
+          </li>
+          <li>
+            <a href="#">Inicio</a>
+          </li>
+          <li>
+            <a href="#">Ofertas</a>
+          </li>
+          <li>
+            <a href="#">Novedades</a>
+          </li>
+          <li>
+            <a href="#">Outlet</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="novedades-container">
+    <h2>Novedades de la semana</h2>
+    <div class="novedades-list">
+      <div class="novedad">
+        <div class="novedad-content">
+          <img src="./img/ofertas/sopaAcelgas.png" alt="Sopa de acelgas">
+          <div class="novedad-text">
+            <h3>Sopa de Acelga y Setas Shiitake</h3>
+            <p>Un caldo claro y reconfortante, con acelga fresca y setas shiitake, cocinados con jengibre y un toque de
+              salsa de soja.
+              Un primer plato ligero y lleno de sabor.</p>
+            <span class="precio">€5,00</span>
+          </div>
         </div>
-    </main>
-    <footer>
+      </div>
+
+      <div class="novedad">
+        <div class="novedad-content">
+          <div class="novedad-text">
+            <h3>Bao hecho a mano</h3>
+            <p>Suave panecillo al vapor relleno de cerdo y verduras.</p>
+            <span class="precio">€6,50</span>
+          </div>
+          <img src="./img/ofertas/baoMano.png" alt="Bao hecho a mano">
+        </div>
+      </div>
+
+      <div class="novedad">
+        <div class="novedad-content">
+          <img src="./img/ofertas/terneraOstras.png" alt="Ternera con salsa de otras">
+          <div class="novedad-text">
+            <h3>Ternera Salteada con Pimientos y Salsa de Ostras</h3>
+            <p>Ternera en trozos, salteada con pimientos rojos y cebollas en una salsa de ostras suave.</p>
+            <span class="precio">€10,80</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="novedad">
+        <div class="novedad-content">
+          <div class="novedad-text">
+            <h3>Tarta de Sésamo y Frambuesa</h3>
+            <p>Tarta con base de galleta, crema de sésamo y una capa de frambuesas frescas.
+            </p>
+            <span class="precio">€4,50</span>
+          </div>
+          <img src="./img/ofertas/tartaFrambuesa.png" alt="Tarta frambuesa">
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
     <div id="divFooter">
       <!-- <div><img src="img/LogoDIW 1.png" alt="Logo ZhenLong footer" width="150px" /></div> -->
       <div>
@@ -105,8 +150,6 @@
         Politica de cookies</p>
     </div>
   </footer>
-
-
 </body>
 
 </html>
