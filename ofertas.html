@@ -14,57 +14,57 @@
 
 <body>
     <header>
-
-        <div>
-            <h4>Restaurante chino Santiago de Compostela</h4>
-            <p>Contacto</p>
-        </div>
+        
         <div id="logo">
-            <div>
-                <img src="img/LogoDIW.png" alt="Logo ZhenLong" width="150px">
-                <h1>Restaurante chino ZhenLong</h1>
-            </div>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-danger" type="submit">Search</button>
-            </form>
+          <div>
+            <img src="img/LogoDIW.png" alt="Logo ZhenLong" width="150px" />
+            <img src="img/zhen.png" alt="Logo ZhenLong" width="150px" />
+            <img src="img/long.png" alt="Logo ZhenLong" width="150px" />
+          </div>
+          <form role="search">
+            <input type="search" placeholder="Search" aria-label="Search" />
+            <button type="submit">Search</button>
+          </form>
         </div>
-    </header>
-    <nav>
-        <div class="padding_control">
-            <div>
-                <ul class="nav nav-pills">
-                    <li class="nav-item">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Todas las Categorias
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Entrantes</a></li>
-                                <li><a class="dropdown-item" href="#">Primer Plato</a></li>
-                                <li><a class="dropdown-item" href="#">Segundo Plato</a></li>
-                                <li><a class="dropdown-item" href="#">Acompañamientos</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ofertas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Novedades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Outlet</a>
-                    </li>
-                </ul>
-            </div>
+      </header>
+      <nav>
+        <div>
+          <div>
+            <ul>
+              <li>
+                <div>
+                  <select name="selectNavbar" id="idSelectNavbar">
+                    <option value="todasCategorias">
+                      <a href="#">Todas las categorias</a>
+                    </option>
+                    <option value="entrantes"><a href="#">Entrantes</a></option>
+                    <option value="primerosPlatos">
+                      <a href="#">Primeros Platos</a>
+                    </option>
+                    <option value="segundosPlatos">
+                      <a href="#">Segundos Platos</a>
+                    </option>
+                    <option value="postres"><a href="#">Postres</a></option>
+                    <option value="bebidas"><a href="#">Bebidas</a></option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <a href="#">Inicio</a>
+              </li>
+              <li>
+                <a href="#">Ofertas</a>
+              </li>
+              <li>
+                <a href="#">Novedades</a>
+              </li>
+              <li>
+                <a href="#">Outlet</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-
+      </nav>
     <main>
         <div class="padding_control">
             <div>
@@ -74,12 +74,37 @@
         </div>
     </main>
     <footer>
-        <div>
-            <h2>ZHEN LONG</h2>
-            <p>Tu restaurante chino en Santiago.</p>
+    <div id="divFooter">
+      <!-- <div><img src="img/LogoDIW 1.png" alt="Logo ZhenLong footer" width="150px" /></div> -->
+      <div>
+        <h4>DIRECCIÓN</h4><br>
+        <p>Rúa do Horreo 20 - 15820<br>Santiago de Compostela</p>
+      </div>
+      <div>
+        <h4>HORARIO</h4><br>
+        <p>Lunes a viernes 13:00 a 16:15 <br>y de 20:00 a 24:45</p>
+      </div>
+      <div>
+        <h4>SÍGUENOS</h4><br>
+        <p>Nuestras redes sociales</p>
+        <br>
+        <div id="divLogos">
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="img/logoInstagram.png" alt="Instagram" id="logoInstagram">
+          </a>
+
+          <a href="https://www.facebook.com" target="_blank">
+            <img src="img/logoFacebook.png" alt="Facebook" id="logoFacebook">
+          </a>
+
         </div>
-        <p>Contacto</p>
-    </footer>
+      </div>
+    </div>
+    <div id="parrafoFooter">
+      <p>2025 Restaurante Zhèn Lông Santiago de Compostela - Todos los derechos reservados - Política de Privacidad -
+        Politica de cookies</p>
+    </div>
+  </footer>
 
 
 </body>

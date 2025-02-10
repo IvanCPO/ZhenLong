@@ -1,91 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZhenLong</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZhenLong</title>
+  <body>
+    <body>
+      <header>
+        
+        <div id="logo">
+          <div>
+            <img src="img/LogoDIW.png" alt="Logo ZhenLong" width="150px" />
+            <img src="img/zhen.png" alt="Logo ZhenLong" width="150px" />
+            <img src="img/long.png" alt="Logo ZhenLong" width="150px" />
+          </div>
+          <form role="search">
+            <input type="search" placeholder="Search" aria-label="Search" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </header>
+      <nav>
+        <div>
+          <div>
+            <ul>
+              <li>
+                <div>
+                  <select name="selectNavbar" id="idSelectNavbar">
+                    <option value="todasCategorias">
+                      <a href="#">Todas las categorias</a>
+                    </option>
+                    <option value="entrantes"><a href="#">Entrantes</a></option>
+                    <option value="primerosPlatos">
+                      <a href="#">Primeros Platos</a>
+                    </option>
+                    <option value="segundosPlatos">
+                      <a href="#">Segundos Platos</a>
+                    </option>
+                    <option value="postres"><a href="#">Postres</a></option>
+                    <option value="bebidas"><a href="#">Bebidas</a></option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <a href="#">Inicio</a>
+              </li>
+              <li>
+                <a href="#">Ofertas</a>
+              </li>
+              <li>
+                <a href="#">Novedades</a>
+              </li>
+              <li>
+                <a href="#">Outlet</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-
-<body>
-  <header>
-    <div>
-      <p>Restaurante Chino en Santiago de Compostela</p>
-      <a>Contacto</a>
-    </div>
-
-    <div id="logo">
-      <div>
-        <img src="img/LogoDIW.png" alt="Logo ZhenLong" width="150px" />
-        <h1>ZHEN LONG</h1>
-      </div>
-      <form role="search">
-        <input type="search" placeholder="Search" aria-label="Search" />
-        <button type="submit">Search</button>
-      </form>
-    </div>
-  </header>
-  <nav>
-    <div>
-      <div>
-        <ul>
-          <li>
-            <div>
-              <select name="selectNavbar" id="idSelectNavbar">
-                <option value="todasCategorias"><a href="#">Todas las categorias</a></option>
-                <option value="entrantes"><a href="#">Entrantes</a></option>
-                <option value="primerosPlatos"><a href="#">Primeros Platos</a></option>
-                <option value="segundosPlatos"><a href="#">Segundos Platos</a></option>
-                <option value="postres"><a href="#">Postres</a></option>
-                <option value="bebidas"><a href="#">Bebidas</a></option>
-              </select>
+      <main>
+        <div class="padding_control">
+          <div class="banner-container">
+            <div class="notice">
+              <h1>Comida china en Santiago</h1>
+              <p>Llámanos y encarga tu pedido</p>
+              <button>Consultar</button>
             </div>
-          </li>
-          <li>
-            <a href="#">Inicio</a>
-          </li>
-          <li>
-            <a href="#">Ofertas</a>
-          </li>
-          <li>
-            <a href="#">Novedades</a>
-          </li>
-          <li>
-            <a href="#">Outlet</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <div class="padding_control">
-      <div class="banner-container">
-        <div class="notice">
-          <h1>Comida china en Santiago</h1>
-          <p>Llámanos y encarga tu pedido</p>
-          <button>Consultar</button>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="padding_control_platos">
-      <div>
-        <h1>Platos</h1>
-        <p>
-          Pal gusto del guionista de la pagina. Yo aqui veo bien poner un
-          textito o algo
-        </p>
-        <div class="catalog_grid">
-          <img src="img/categorias/arrozJazmin.png" alt="Entrantes" />
-          <img src="img/categorias/dumblingsCerdo.png" alt="Primeros platos" />
-          <img src="img/categorias/polloCurry.png" alt="Segundos platos" />
-          <img src="img/categorias/panChino.png" alt="Acompañamientos" />
-        </div>
-      </div>
-    </div>
+        <div class="padding_control_platos">
+          <div>
+            <h1>Platos</h1>
+            <p>
+              Pal gusto del guionista de la pagina. Yo aqui veo bien poner un
+              textito o algo
+            </p>
+            <div class="catalog_grid">
+              <img src="img/categorias/arrozJazmin.png" alt="Entrantes" />
+              <img
+                src="img/categorias/dumblingsCerdo.png"
+                alt="Primeros platos"
+              />
+              <img src="img/categorias/polloCurry.png" alt="Segundos platos" />
+              <img src="img/categorias/panChino.png" alt="Acompañamientos" />
+            </div>
+          </div>
+         </div>
   </main>
   <footer>
     <div id="divFooter">
@@ -120,5 +125,4 @@
     </div>
   </footer>
 </body>
-
 </html>
