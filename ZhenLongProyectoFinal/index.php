@@ -15,23 +15,19 @@
 </head>
 
 <body>
-
-  <!-- Navbar común -->
   <?php include './comun/navbar.php'; ?>
 
   <main>
-    <!-- Sección del banner -->
     <div class="padding_control">
       <div class="banner-container">
         <div class="notice">
           <h1>Comida china en Santiago</h1>
           <p>Llámanos y encarga tu pedido</p>
-          <button>Consultar</button>
+          <button id="botonConsultar">Consultar</button>
         </div>
       </div>
     </div>
 
-    <!-- Sección de categorías con enlaces -->
     <div class="padding_control_platos">
       <div id="div_contenedor_categorias">
         <h1>Platos</h1>
@@ -153,7 +149,6 @@
     </section>
   </main>
 
-  <!-- Footer común -->
   <?php include 'comun/footer.php'; ?>
 
 </body>

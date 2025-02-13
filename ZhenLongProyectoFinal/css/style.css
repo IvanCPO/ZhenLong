@@ -34,7 +34,7 @@ header div {
 
 footer,
 header > div:first-child {
-  background-color: #000000;
+  background-color: #7A956B;
   color: #e9f5db;
   display: flex;
   justify-content: space-between;
@@ -222,6 +222,101 @@ form button:hover {
   width: 100%;
   padding: 10px 0;
 }
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  /* Estilos para el navbar */
+  header div {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #logo {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  form {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  form input[type='search'] {
+    width: 80%;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: #e9f5db;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: #444c35;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav li {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .menu-toggle:focus + ul,
+  .menu-toggle:active + ul {
+    display: flex;
+  }
+
+  
+  #divFooter {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #divFooter > div {
+    margin: 20px 0;
+  }
+
+  #divLogos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #parrafoFooter {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+}
+.menu-toggle {
+    display: none; 
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; 
+    }
+}
+
 
 /* index.html */
 .padding_control_platos {
@@ -309,8 +404,8 @@ form button:hover {
   width: 100%;
 }
 .catalog_item img {
-  width: 100%; /* Ocupa todo el ancho del contenedor */
-  height: 350px; /* Tamaño uniforme */
+  width: 100%; 
+  height: 350px; 
   border-radius: 10px;
   object-fit: cover; 
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -361,13 +456,13 @@ section {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  border-top: 5px solid #2e8b57; /* Verde elegante */
+  border-top: 5px solid #2e8b57; 
 }
 
 section h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #2e8b57; /* Verde oscuro */
+  color: #2e8b57; 
   text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -617,6 +712,8 @@ section ul li strong {
   border: 3px solid black;
   margin: 8vh;
 }
+
+
 #divEntrantes img,
 #divPrimeros img,
 #divSegundos img,
@@ -624,158 +721,26 @@ section ul li strong {
 #divPostres img,
 #divBebidas img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
 }
 
-#divPrimeros > div {
-  background-color: #ffffff;
-  border: 2px solid #ccc;
-  padding: 60px;
-  font-size: 18px;
-  text-align: center;
-  width: 400px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-#divPrimeros > div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
 
-#divPrimeros h1 {
-  grid-column: 1 / -1;
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-#divEntrantes > div {
-  background-color: #ffffff;
-  border: 2px solid #ccc;
-  padding: 60px;
-  font-size: 18px;
-  text-align: center;
-  width: 400px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-#divEntrantes > div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-#divEntrantes h1 {
-  grid-column: 1 / -1;
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-#divSegundos > div {
-  background-color: #ffffff;
-  border: 2px solid #ccc;
-  padding: 60px;
-  font-size: 18px;
-  text-align: center;
-  width: 400px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-#divSegundos > div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-#divSegundos h1 {
-  grid-column: 1 / -1;
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-#divAcompañantes > div {
-  background-color: #ffffff;
-  border: 2px solid #ccc;
-  padding: 60px;
-  font-size: 18px;
-  text-align: center;
-  width: 400px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-#divAcompañantes > div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-#divAcompañantes h1 {
-  grid-column: 1 / -1;
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-#divPostres > div {
-  background-color: #ffffff;
-  border: 2px solid #ccc;
-  padding: 60px;
-  font-size: 18px;
-  text-align: center;
-  width: 400px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-#divPostres > div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-#divPostres h1 {
-  grid-column: 1 / -1;
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
+#divEntrantes > div,
+#divPrimeros > div,
+#divSegundos > div,
+#divAcompañantes > div,
+#divPostres > div,
 #divBebidas > div {
   background-color: #ffffff;
   border: 2px solid #ccc;
-  padding: 60px;
+  padding: 20px;  
   font-size: 18px;
   text-align: center;
-  width: 400px;
-  height: 200px;
+  width: 100%; 
+  max-width: 400px; 
+  height: auto; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -784,17 +749,84 @@ section ul li strong {
   transition: transform 0.3s ease;
 }
 
-#divBebidas > div:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
+#divPrimeros h1,
+#divEntrantes h1,
+#divSegundos h1,
+#divAcompañantes h1,
+#divPostres h1,
 #divBebidas h1 {
   grid-column: 1 / -1;
   text-align: center;
   font-size: 40px;
   margin-bottom: 10px;
 }
+
+/* Hover effect */
+#divPrimeros > div:hover,
+#divEntrantes > div:hover,
+#divSegundos > div:hover,
+#divAcompañantes > div:hover,
+#divPostres > div:hover,
+#divBebidas > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  #divEntrantes,
+  #divPrimeros,
+  #divSegundos,
+  #divAcompañantes,
+  #divPostres,
+  #divBebidas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #divPrimeros > div,
+  #divEntrantes > div,
+  #divSegundos > div,
+  #divAcompañantes > div,
+  #divPostres > div,
+  #divBebidas > div {
+    width: 300px;
+    height: 180px;
+    padding: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #divEntrantes,
+  #divPrimeros,
+  #divSegundos,
+  #divAcompañantes,
+  #divPostres,
+  #divBebidas {
+    grid-template-columns: 1fr;
+    margin: 4vh;
+  }
+
+  #divPrimeros > div,
+  #divEntrantes > div,
+  #divSegundos > div,
+  #divAcompañantes > div,
+  #divPostres > div,
+  #divBebidas > div {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  #divPrimeros h1,
+  #divEntrantes h1,
+  #divSegundos h1,
+  #divAcompañantes h1,
+  #divPostres h1,
+  #divBebidas h1 {
+    font-size: 30px;
+  }
+}
+
 
 /* Outlet.html */
 .card {
@@ -857,4 +889,35 @@ section ul li strong {
     flex-direction: column;
     text-align: center;
   }
+}
+
+/* mensaje de error de la barra de busqueda */
+#errorMessage {
+    font-size: 16px;
+    color: #fff; 
+    background-color: #f44336; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    width: auto;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
 }
